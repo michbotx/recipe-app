@@ -1,0 +1,85 @@
+@import "/utils/reset.css";
+@import "./components/fire.css";
+@import "./utils/root.css";
+
+
+body {
+    width: 480px;
+    margin: 0 auto;
+    height: 100%;
+    color: var(--body-text);
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--header-font);
+    font-weight: 400;   
+}
+
+p {
+    font-family: var(--body-font);
+}
+
+.wrapper {
+    background-color: var(--bg-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    background-color: var(--header-color);
+    padding: var(--padding-normal);
+}
+
+main {
+    padding: var(--padding-normal);
+    text-align: center;
+    flex: 1 0 auto;
+}
+
+/* INPUT FORM */
+
+#input {
+    margin: 15px auto;
+    font-family: var(--body-font);
+    width: 70%;
+    padding: 5px 15px;
+    outline: none;
+}
+
+#input:focus {
+    border: 1px solid #ffbb01;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 #ffbb0148;
+}
+
+#submitButton {
+    background-color: rgb(180, 180, 245);
+    color: white;
+    padding: 6px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* TASKBAR */
+#taskbar img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    height: 50px
+}
+
+#taskbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--taskbar);
+    padding: 15px 0;
+}
+
+#taskbar {
+    flex-shrink: 0;
+}
