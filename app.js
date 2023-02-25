@@ -15,7 +15,6 @@ function setTheme() {
     darkMode() 
 }
 
-
 function darkMode() {
     body.setAttribute('data-theme', (body.getAttribute('data-theme') === 'dark') ? 'light' : 'dark');
     themeIcon.setAttribute("src", (themeIcon.getAttribute("src") === "images/icon-moon.svg") 
@@ -26,3 +25,25 @@ function darkMode() {
 }
 
 toggleSwitch.addEventListener("click",setTheme)
+
+
+//GRAB INGREDIENTS
+
+let ingredientItems = [];
+
+const inputBox = document.querySelector("#input")
+
+inputBox.addEventListener("change", () => {
+    
+})
+// SHOW INGREDIENTS
+
+const ingredientsContainer = document.querySelector("#ingredients-list")
+
+ingredientsContainer.innerHTML = 
+`<ul class="ingredient__list">
+
+
+</ul>
+
+`

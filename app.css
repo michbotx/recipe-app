@@ -83,3 +83,8 @@ main {
 #taskbar {
     flex-shrink: 0;
 }
+
+.ingredient__list {
+    text-align: left;
+    columns: 2;
+}
